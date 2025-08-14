@@ -6,7 +6,7 @@
     </head>
 <body>
     <?= $this->include('components/navbar') ?>
-    <?= $this->include('components/footer') ?>
     <h2>ini HOME pages</h2>
+    <?= $this->include('components/footer') ?>
 </body>
 </html>
