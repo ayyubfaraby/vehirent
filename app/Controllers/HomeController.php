@@ -19,9 +19,5 @@ class HomeController extends BaseController
         return view('pages/contact', ['title' => 'Contact']);
     }
 
-    public function produkLengkap(): string
-    {
-        return view('pages/produkLengkap', ['title' => 'Produk selengkapnya']);
-    }
 }
 

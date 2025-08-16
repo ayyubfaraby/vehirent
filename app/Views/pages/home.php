@@ -11,6 +11,11 @@
             <h3>Avanza</h3>
             <p>Mobil keluarga nyaman, cocok untuk perjalanan jauh.</p>
             <p><strong>Rp 350.000 / hari</strong></p>
+            <a href="<?= base_url('mobil/detail/1') ?>" 
+   style="display:inline-block;margin-top:10px;background:#28a745;color:#fff;padding:8px 15px;border-radius:5px;text-decoration:none;">
+   Cek Detail
+</a>
+
         </div>
 
         <!-- Card 2 -->
@@ -19,12 +24,17 @@
             <h3>Innova</h3>
             <p>Mobil premium dengan kapasitas besar dan nyaman.</p>
             <p><strong>Rp 500.000 / hari</strong></p>
+            <a href="<?= base_url('mobil/detail/2') ?>" 
+   style="display:inline-block;margin-top:10px;background:#28a745;color:#fff;padding:8px 15px;border-radius:5px;text-decoration:none;">
+   Cek Detail
+</a>
+
         </div>
     </div>
 
     <!-- Tombol lihat lebih banyak -->
     <div style="margin-top: 30px;">
-        <a href="<?= base_url('produkLengkap') ?>" 
+        <a href="<?= base_url('about') ?>" 
            style="display: inline-block; background: #007BFF; color: #fff; padding: 10px 20px; border-radius: 5px; text-decoration: none;">
            Lihat Semua Mobil
         </a>
