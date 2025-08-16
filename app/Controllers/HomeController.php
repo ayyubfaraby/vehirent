@@ -6,23 +6,22 @@ class HomeController extends BaseController
 {
     public function index(): string
     {
-        return view('pages/home', [
-            'title' => 'Home'
-        ]);
+        return view('pages/home', ['title' => 'Home']);
     }
 
     public function about(): string
     {
-        return view('pages/about', [
-            'title' => 'About'
-        ]);
+        return view('pages/about', ['title' => 'About']);
     }
 
     public function contact(): string
     {
-        return view('pages/contact', [
-            'title' => 'Contact'
-        ]);
+        return view('pages/contact', ['title' => 'Contact']);
+    }
+
+    public function produkLengkap(): string
+    {
+        return view('pages/produkLengkap', ['title' => 'Produk selengkapnya']);
     }
 }
 
