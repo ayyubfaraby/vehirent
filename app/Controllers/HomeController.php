@@ -1,12 +1,21 @@
 <?php
 
 namespace App\Controllers;
+use App\Models\MobilModel;
 
 class HomeController extends BaseController
 {
     public function index(): string
     {
-        return view('pages/home', ['title' => 'Home']);
+        $mobilModel = new MobilModel();
+        $mobilList = $mobilModel->findAll();
+
+        $data = [
+            'title' => 'Home',
+            'mobilList' => $mobilList
+        ];
+        
+        return view('pages/home', $data);
     }
 
     public function about(): string

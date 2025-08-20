@@ -1,42 +1,30 @@
 <?= $this->extend('layout/main') ?>
 
 <?= $this->section('content') ?>
-    <h2>Rental Mobil</h2>
-    <p>Pilih mobil terbaik untuk perjalanan Anda 🚗✨</p>
+    <div class="home-teks">
+    <p>Permudah rencana Perjalan
+        Anda dengan vehirent </p>
+    </div>
 
-    <div style="display: flex; gap: 20px; margin-top: 20px;">
-        <!-- Card 1 -->
-        <div style="border: 1px solid #ddd; padding: 15px; border-radius: 10px; width: 250px;">
-            <img src="https://via.placeholder.com/250x150" alt="Mobil 1" style="width:100%; border-radius: 8px;">
-            <h3>Avanza</h3>
-            <p>Mobil keluarga nyaman, cocok untuk perjalanan jauh.</p>
-            <p><strong>Rp 350.000 / hari</strong></p>
-            <a href="<?= base_url('mobil/detail/1') ?>" 
-   style="display:inline-block;margin-top:10px;background:#28a745;color:#fff;padding:8px 15px;border-radius:5px;text-decoration:none;">
-   Cek Detail
-</a>
-
+    <div style="display: flex; gap: 20px; margin-top: 20px; justify-content: center;">
+        <div style="border: 1px solid #0c47e9; padding: 15px; border-radius: 10px; width: 250px;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 123, 255, 0.5);">
+            <img src="<?= base_url($mobilList[0]['gambar']) ?>" alt="Mobil 1" style="width:100%; border-radius: 8px;">
+            <h2><?= $mobilList[0]['nama'] ?></h2>
+            <p><?= $mobilList[0]['deskripsi'] ?></p>
+            <p><strong>Rp <?= $mobilList[0]['harga'] ?> / hari</strong></p>
+            <a href="<?= base_url('mobil/detail/1') ?>">Cek Detail</a>
         </div>
 
-        <!-- Card 2 -->
-        <div style="border: 1px solid #ddd; padding: 15px; border-radius: 10px; width: 250px;">
-            <img src="https://via.placeholder.com/250x150" alt="Mobil 2" style="width:100%; border-radius: 8px;">
-            <h3>Innova</h3>
-            <p>Mobil premium dengan kapasitas besar dan nyaman.</p>
-            <p><strong>Rp 500.000 / hari</strong></p>
-            <a href="<?= base_url('mobil/detail/2') ?>" 
-   style="display:inline-block;margin-top:10px;background:#28a745;color:#fff;padding:8px 15px;border-radius:5px;text-decoration:none;">
-   Cek Detail
-</a>
-
+        <div style="border: 1px solid #000000ff; padding: 15px; border-radius: 10px; width: 250px;">
+            <img src="<?= base_url($mobilList[1]['gambar']) ?>" alt="Mobil 1" style="width:100%; border-radius: 8px;">
+            <h2><?= $mobilList[1]['nama'] ?></h2>
+            <p><?= $mobilList[1]['deskripsi'] ?></p>
+            <p><strong>Rp <?= $mobilList[1]['harga'] ?> / hari</strong></p>
+            <a href="<?= base_url('mobil/detail/2') ?>">Cek Detail</a>
         </div>
     </div>
 
-    <!-- Tombol lihat lebih banyak -->
-    <div style="margin-top: 30px;">
-        <a href="<?= base_url('about') ?>" 
-           style="display: inline-block; background: #007BFF; color: #fff; padding: 10px 20px; border-radius: 5px; text-decoration: none;">
-           Lihat Semua Mobil
-        </a>
-    </div>
 <?= $this->endSection() ?>
